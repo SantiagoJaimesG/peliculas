@@ -1,0 +1,317 @@
+*{
+	margin: 0px;
+	font-family: Century Gothic;
+	color: white;
+}
+
+.peli1, .peli2{
+	display: flex;
+	justify-content: space-around;
+	padding-top: 35px;
+    padding-bottom: 46px;
+	background-color: #263054;
+}
+
+.peli1 .padrepeli .imgpeli img, .peli2 .padrepeli .imgpeli img{
+	width: 200px;
+	height: 290px;
+	border-radius: 10px;
+}
+
+.peli1 .padrepeli .titulopeliv, .peli2 .padrepeli .titulopeliv{
+	width: 200px;
+	padding-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.peli1 .padrepeli, .peli2 .padrepeli{
+	text-align: center;
+}
+
+.peli1 .padrepeli .imgpeli, .peli2 .padrepeli .imgpeli{
+	padding-top: 20px;
+}
+
+.padre1{
+	background-color: #141a32;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.padre1 .menu ul{
+	display: flex;
+	justify-content: center;
+	gap:30px;
+	align-items: center;
+	list-style: none;
+}
+
+.padre1 .hijo1,.padre .hijo2{
+	display: flex;
+	justify-content: center;
+	gap:30px;
+	color: white;
+	align-items: center;
+	padding-left: 45px;
+}
+
+.padre1 .hijo2{
+	display: flex;
+    width: 260px;
+}
+
+.padre1 .hijo2 a{
+	color:white;
+	text-decoration: none;
+}
+
+.padre1 .hijo2 .btn{
+	padding-left: 30px;
+}
+
+.padre3{
+	background-color: #141a32;
+}
+
+/*.padre3 .padrepeliocul{
+	display: none;
+}*/
+
+
+
+.padrepeliocul {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;  
+}
+
+.backimg0{
+  background-image: url('../img/avatar.jpg');
+}
+
+.backimg1{
+  background-image: url('../img/avengerse.jpg');
+}
+
+.backimg2{
+  background-image: url('../img/titanic.jpg');
+}
+
+.backimg3{
+  background-image: url('../img/starwars.jpg');
+}
+
+.backimg4{
+  background-image: url('../img/avengersi.jpg');
+}
+
+.backimg20{
+  background-image: url('../img/spiderman.jpg');
+}
+
+.backimg21{
+  background-image: url('../img/jurasic.jpg');
+}
+
+.backimg22{
+  background-image: url('../img/reyleon.jpg');
+}
+
+.backimg23{
+  background-image: url('../img/avengers.jpg');
+}
+
+.backimg24{
+  background-image: url('../img/furiosos.jpg');
+}
+
+.backimg{
+  width: 278px;
+  height: 400px;
+  background-size: 100% 100%;
+  filter:brightness(0.2);
+  border-radius: 15px;
+}
+
+.x{
+  transform: rotate(77deg);
+  margin-left: 235px;
+  margin-top: 15px;
+}
+   
+.titulopeli, .sinopsis, .x {
+  position: absolute;  
+  color:#fff;
+  top: 0;
+}
+
+.titulopeli{
+  padding-top: 134px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  filter: drop-shadow(4px 4px 6px black);
+  width: 17%;
+}
+
+.sinopsis{
+  font-size: 14px;
+  padding-left: 15px;
+  top: 176px;
+  filter: drop-shadow(4px 4px 6px black);
+}
+
+.titulo1{
+  padding-top: 90px;
+}
+
+.sinop0{
+  width: 17%;
+}
+
+.sinop1{
+  width: 22%;
+}
+
+.sinop2{
+  width: 29%;
+}
+
+.titulo3{
+  padding-top: 40px;
+  width: 40%;
+}
+
+.sinop3{
+  padding-top: 30px;
+  width: 43%;
+}
+
+.titulo4{
+  padding-top: 123px;
+  width: 70%;
+}
+
+.sinop4{
+  padding-top: 30px;
+  width: 85%;
+}
+
+.titulo20{
+  padding-top: 123px;
+}
+
+.sinop20{
+  padding-top: 30px;
+  width: 17%;
+}
+
+.titulo21{
+  padding-top: 110px;
+  width: 25%;
+}
+
+.sinop21{
+  margin-top: -20px;
+  width: 22%;
+}
+
+.titulo22{
+  padding-top: 205px;
+  width: 20%;
+}
+
+.sinop22{
+  padding-top: 75px;
+  width: 25%;
+}
+.titulo23{
+  width: 40%;
+}
+
+.sinop23{
+  width: 40%;
+}
+
+.titulo24{
+  width: 50%;
+}
+
+.sinop24{
+  width: 80%;
+}
+
+.padrepeliocul{
+	display: none;
+}
+
+.pelicula0, .pelicula1, .pelicula2, .pelicula3, .pelicula4, 
+.pelicula20, .pelicula21, .pelicula22, .pelicula23, .pelicula24{
+	position: relative;
+}
+
+.padrepeliocul0{
+	position: absolute;
+	top: 100px;
+    left: 12px;
+}
+
+.padrepeliocul1{
+	position: absolute;
+	top: 100px;
+    left: 267px;
+}
+
+.padrepeliocul2{
+	position: absolute;
+	top: 100px;
+    left: 535px;
+}
+
+.padrepeliocul3{
+	position: absolute;
+	top: 100px;
+    left: 807px;
+}
+
+.padrepeliocul4{
+	position: absolute;
+	top: 100px;
+    left: 1064px;
+}
+
+.padrepeliocul20{
+	position: absolute;
+	top: 545px;
+    left: 12px;
+}
+
+.padrepeliocul21{
+	position: absolute;
+	top: 545px;
+    left: 267px;
+}
+
+.padrepeliocul22{
+	position: absolute;
+	top: 545px;
+    left: 535px;
+}
+
+.padrepeliocul23{
+	position: absolute;
+	top: 545px;
+    left: 807px;
+}
+
+.padrepeliocul24{
+	position: absolute;
+	top: 545px;
+    left: 1064px;
+}
+

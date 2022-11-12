@@ -1,0 +1,138 @@
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/vista.css">
+</head>
+<body>
+<div class="padre1">
+	<div class="hijo1"> 
+		<div class="logo"><img src="img\logo.png"></div>
+		<div class="menu">
+			<ul>
+				<li>INICIO</li>
+				<li>SERIES</li>
+				<li>ESTRENOS DE SERIES</li>
+				<li>PELICULAS</li>
+				<li>ESTRENOS DE PELICULAS</li>
+			</ul>
+		</div>
+	</div>
+	<div class="hijo2">
+		<div class="signin"><a href="#">ANIMES</a></div>
+		<div class="btn"><a href="#">BUSQUEDA	</a></div>
+		<!--<div class="opciones-menu"><img src="img/menu-mobile.png"></div>-->
+	</div>
+</div>
+
+<div class="padre2">
+	<div class="peli1"></div>
+	<div class="peli2"></div>
+</div>
+
+<div class="padre3">
+	<div class="peliocul1"></div>
+	<div class="peliocul2"></div>
+</div>
+
+<script>
+const fotopeli1 = ["avatar.jpg", "avengerse.jpg", "titanic.jpg", "starwars.jpg","avengersi.jpg"];
+
+const fotopeli2 = ["spiderman.jpg", "jurasic.jpg","reyleon.jpg","avengers.jpg", "furiosos.jpg"];
+
+const nombrespeli1 = ["Avatar", "Avengers: Endgame", "Titanic", "Star Wars: Episodio VII - El despertar de la Fuerza","Avengers: Infinity War"];
+
+const nombrespeli2 = ["Spider-Man: No Way Home", "Jurassic World", "El rey león","The Avengers","Furious 7"];
+
+const sinopsis1 = ["En un exuberante planeta llamado Pandora viven los Na'vi, seres que aparentan ser primitivos pero que en realidad son muy evolucionados. Debido a que el ambiente de Pandora es venenoso, los híbridos humanos/Na'vi, llamados Avatares, están relacionados con las mentes humanas, lo que les permite moverse libremente por Pandora.", "Después de los eventos devastadores de Avengers: Infinity War, el universo está en ruinas debido a las acciones de Thanos, el Titán Loco. Con la ayuda de los aliados que quedaron, los Vengadores deberán reunirse una vez más para intentar detenerlo y restaurar el orden en el universo de una vez por todas.", "Jack es un joven artista que gana un pasaje para viajar a América en el Titanic, el transatlántico más grande y seguro jamás construido. A bordo del buque conoce a Rose, una chica de clase alta que viaja con su madre y su prometido Cal, un millonario engreído a quien solo interesa el prestigio de la familia de su prometida.", "La nave en la que viaja la princesa Leia es capturada por las tropas imperiales al mando del temible Darth Vader. Antes de ser atrapada, Leia consigue introducir un mensaje en su robot R2-D2, quien acompañado de su inseparable C-3PO logran escapar.","Los superhéroes se alían para vencer al poderoso Thanos, el peor enemigo al que se han enfrentado. Si Thanos logra reunir las seis gemas del infinito: poder, tiempo, alma, realidad, mente y espacio, nadie podrá detenerlo."];
+
+const sinopsis2 = ["Tras descubrirse la identidad secreta de Peter Parker como Spider-Man, la vida del joven se vuelve una locura. Peter decide pedirle ayuda al Doctor Extraño para recuperar su vida. Pero algo sale mal y provoca una fractura en el multiverso.", "Han pasado 22 años desde que el millonario John Hammond clonara el primer dinosaurio. Con tecnologías mejoradas y nuevas medidas de seguridad, el parque temático Jurassic World abre sus puertas. La nueva atracción del parque es el Indominus Rex, una nueva especie de dinosaurio creada por los científicos de forma artificial y más peligrosa que las otras especies conocidas.","Tras la muerte de su padre, Simba deberá enfrentarse a su tío para recuperar el trono de Rey de la Selva. Timón y Pumba le acompañarán en su misión.","El director de la Agencia SHIELD decide reclutar a un equipo para salvar al mundo de un desastre casi seguro cuando un enemigo inesperado surge como una gran amenaza para la seguridad mundial.", "Hace un año que Dominic y Brian fueron indultados y pudieron regresar a los Estados Unidos. Después de su llegada desean adaptarse a su nueva vida dentro de la legalidad, pero las cosas no son tan fáciles. Dom quiere acercarse a Letty y Brian se acostumbra a la vida en una urbanización con Mia y su hijo."];
+
+
+let peli1 = "";
+for (let i = 0; i < 5; i++) {
+ peli1 = peli1 +"<div class='pelicula"+[i]+" padrepeli'><div class='imgpeli'><img src='img/"+ fotopeli1[i] +"'></div><div class='titulopeliv'>"+nombrespeli1[i]+"</div></div><div class='padrepeliocul padrepeliocul"+[i]+"'><div class='backimg backimg"+[i]+"'></div><div class='x'><img src='img/x.png'></div><div class='titulopeli titulo"+[i]+"'><h1>"+nombrespeli1[i]+"</h1></div><div class='sinopsis sinop"+[i]+"'><p>"+sinopsis1[i]+"</p></div></div>";
+}
+
+let peli2 = "";
+for (let i = 0; i < 5; i++) {
+ peli2 = peli2 +"<div class='pelicula2"+[i]+" padrepeli'><div class='imgpeli'><img src='img/"+ fotopeli2[i] +"'></div><div class='titulopeliv'>"+nombrespeli2[i]+"</div></div><div class='padrepeliocul padrepeliocul2"+[i]+"'><div class='backimg backimg2"+[i]+"'></div><div class='x'><img src='img/x.png'></div><div class='titulopeli titulo2"+[i]+"'><h1>"+nombrespeli2[i]+"</h1></div><div class='sinopsis sinop2"+[i]+"'><p>"+sinopsis2[i]+"</p></div></div>";
+}
+
+$(".peli1").html(peli1);
+$(".peli2").html(peli2);
+
+$(".pelicula0").click(function(){
+	$(".padrepeliocul0").fadeIn();
+	$(".x").click(function(){
+		$(".padrepeliocul0").fadeOut();
+	});
+});
+
+$(".pelicula1").click(function(){
+	$(".padrepeliocul1").fadeIn();
+	$(".x").click(function(){
+		$(".padrepeliocul1").fadeOut();
+	});
+});
+
+$(".pelicula2").click(function(){
+	$(".padrepeliocul2").fadeIn();
+	$(".x").click(function(){
+		$(".padrepeliocul2").fadeOut();
+	});
+});
+
+$(".pelicula3").click(function(){
+	$(".padrepeliocul3").fadeIn();
+	$(".x").click(function(){
+		$(".padrepeliocul3").fadeOut();
+	});
+});
+
+$(".pelicula4").click(function(){
+	$(".padrepeliocul4").fadeIn();
+	$(".x").click(function(){
+		$(".padrepeliocul4").fadeOut();
+	});
+});
+
+$(".pelicula20").click(function(){
+	$(".padrepeliocul20").fadeIn();
+	$(".x").click(function(){
+		$(".padrepeliocul20").fadeOut();
+	});
+});
+
+$(".pelicula21").click(function(){
+	$(".padrepeliocul21").fadeIn();
+	$(".x").click(function(){
+		$(".padrepeliocul21").fadeOut();
+	});
+});
+
+$(".pelicula22").click(function(){
+	$(".padrepeliocul22").fadeIn();
+	$(".x").click(function(){
+		$(".padrepeliocul22").fadeOut();
+	});
+});
+
+$(".pelicula23").click(function(){
+	$(".padrepeliocul23").fadeIn();
+	$(".x").click(function(){
+		$(".padrepeliocul23").fadeOut();
+	});
+});
+
+$(".pelicula24").click(function(){
+	$(".padrepeliocul24").fadeIn();
+	$(".x").click(function(){
+		$(".padrepeliocul24").fadeOut();
+	});
+});
+
+
+</script>
+
+</body>
+</html>
